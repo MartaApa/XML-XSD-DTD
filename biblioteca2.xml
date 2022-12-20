@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arriba se encuentra la instrucción de procesamiento o prólogo, 
+siempre tiene que ir en la primera línea de un documento XML-->
+<biblioteca2>
+        <libro Id="L0001" tipo_clase="novela" numero_de_paginas="158">
+            <!--el tipo de clase de libro será o novela, o infantil o didáctico-->
+                <titulo>El fin de la eternidad</titulo>
+                <capitulo numero_de_paginas="20"><contenido_cap info="El ejecutor"/></capitulo>
+                <capitulo numero_de_paginas="32"><contenido_cap info="El observador"/></capitulo>
+                <capitulo numero_de_paginas="25"><contenido_cap info="El aprendiz"/></capitulo>
+                <capitulo numero_de_paginas="30"><contenido_cap info="El programador"/></capitulo>
+                <capitulo numero_de_paginas="28"><contenido_cap info="El preludio del crimen"/></capitulo>
+                <capitulo numero_de_paginas="23"><contenido_cap info="La eternidad"/></capitulo>
+                <indice_libro> 
+                INDICE 
+                1.El ejecutor..................1
+                2.El observador...............21
+                3.El aprendiz.................53
+                4.El programador..............78
+                5.El preludio del crimen.....108
+                6.La eternidad...............136
+                </indice_libro>
+                <sinopsis>
+                La Tierra funda una organización llamada Eternidad,enviando emisarios al 
+                pasado y al futuro para abrir el comercio entre las diferentes epocas, y 
+                para alterar la larga y trágica historia de la raza humana.
+                Para hombres como Andrew Harlan, Eternidad representaba mucho más que un 
+                trabajo. Pero cuando viajó atrás en el tiempo no pudo evitar enamorarse de 
+                una hermosa no-eterna. Ahora se verá obligado a escapar entre los siglos, 
+                buscando romper las reglas para preservar un futuro juntos, aunque incluya
+                poder destruir la propia Eternidad...      
+                </sinopsis>
+        </libro>
+        <periodico Id="P5001" tipo_periodico="nacional" fecha_publicacion="21/05/2020">
+            <seccion_periodico tipo_de_seccion="deportes">
+                <articulo autor="Julio Maldonado">
+                    <contenido informacion="https://as.com/futbol/2019/06/01/champions/1559347333_749300.html?autoplay=1"/>
+                </articulo>
+            </seccion_periodico>
+            <seccion_periodico tipo_de_seccion="opinion">
+                <articulo autor="Juan Gutiérrez">
+                    <contenido informacion="https://as.com/opinion/2022/05/24/portada/1653423838_736216.html"/>
+                </articulo>
+                <articulo autor="Juan Jiménez">
+                    <contenido informacion="https://as.com/opinion/2022/05/23/portada/1653301388_097885.html"/>
+                </articulo>
+            </seccion_periodico>
+            <seccion_periodico tipo_de_seccion="internacional">
+                <articulo autor="Guillermo Raimundo">
+                    <contenido informacion="https://as.com/futbol/2022/05/24/internacional/1653389247_466694.html"/>
+                </articulo>
+            </seccion_periodico>
+            <indice_periodico>
+             INDICE 
+                1.Deportes..................1
+                2.Opinion..................10
+                3.Internacional............25
+            </indice_periodico>
+        </periodico>  
+        <revista Id="R3501" tipo_revista="coches" numero_de_paginas="50">
+            <titulo_revista>AUTOBILD</titulo_revista>
+            <numero_de_la_revista>113</numero_de_la_revista>
+            <indice_revista>
+            INDICE 
+                1.Electrico.................1
+                2.F1.......................15
+                3.Lo ultimo................38
+            </indice_revista>
+            <seccion_revista numero_de_pag="14">
+                    <contenido_revista inf="https://www.autobild.es/coche-electrico"/>
+            </seccion_revista>
+            <seccion_revista numero_de_pag="23">
+                    <contenido_revista inf="https://www.autobild.es/formula1"/>
+            </seccion_revista>
+            <seccion_revista numero_de_pag="13">
+                    <contenido_revista inf="https://www.autobild.es/ultimo"/>
+            </seccion_revista>
+        </revista>
+</biblioteca2>

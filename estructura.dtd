@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE biblioteca [
+    <!--Definición de elementos-->
+    <!ELEMENT biblioteca (libro*, periodico*, revista*)>
+    <!ELEMENT libro (titulo, capitulo*, indice_libro, sinopsis)>
+    <!ELEMENT periodico (seccion_periodico*, indice_periodico)>
+    <!ELEMENT revista (titulo_revista, numero_de_la_revista, indice_revista, seccion_revista*)>
+    <!ELEMENT seccion_revista (contenido_revista)>
+    <!ELEMENT contenido_revista (#PCDATA)>
+    <!ELEMENT indice_revista (#PCDATA)>
+    <!ELEMENT numero_de_la_revista (#PCDATA)>
+    <!ELEMENT titulo_revista (#PCDATA)>
+    <!ELEMENT indice_periodico (#PCDATA)>
+    <!ELEMENT seccion_periodico (articulo*)>
+    <!ELEMENT articulo (contenido)>
+    <!ELEMENT contenido (#PCDATA)>
+    <!ELEMENT sinopsis (#PCDATA)>
+    <!ELEMENT indice_libro (#PCDATA)>
+    <!ELEMENT capitulo (contenido_cap)>
+    <!ELEMENT contenido_cap (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!--Definicion atributos-->
+    <!ATTLIST libro Id ID #REQUIRED>
+    <!ATTLIST libro tipo_clase (novela|infantil|didactico) #REQUIRED>
+    <!ATTLIST libro numero_de_paginas CDATA #REQUIRED>
+    <!ATTLIST periodico Id ID #REQUIRED>
+    <!ATTLIST periodico tipo_periodico (nacional|internacional) #REQUIRED>
+    <!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
+    <!ATTLIST revista Id ID #REQUIRED>
+    <!ATTLIST revista tipo_revista (informatica|corazon|coches|investigacion|otras) #REQUIRED>
+    <!ATTLIST revista numero_de_paginas CDATA #REQUIRED>
+    <!ATTLIST capitulo numero_de_paginas CDATA #REQUIRED>
+    <!ATTLIST contenido_cap info CDATA #REQUIRED>
+    <!ATTLIST seccion_periodico tipo_de_seccion (economica|opinion|deportes|nacional|internacional) #REQUIRED>
+    <!ATTLIST articulo autor CDATA #REQUIRED>
+    <!ATTLIST contenido informacion CDATA #REQUIRED>
+    <!ATTLIST seccion_revista numero_de_pag CDATA #REQUIRED>
+    <!ATTLIST contenido_revista inf CDATA #REQUIRED>
+]>
